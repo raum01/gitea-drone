@@ -96,9 +96,9 @@ services:
       replicas: 2
 
 volumes:
-  gitea_app: {}
-  gitea_db: {}
-  drone: {}
+  gitea_app: {/share/configs/gitea_app}
+  gitea_db: {/share/configs/gitea_db}
+  drone: {/share/configs/drone_app}
 
 networks:
   public:
